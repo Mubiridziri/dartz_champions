@@ -12,11 +12,7 @@ struct HomeScreen: View {
     @State var authorOpened: Bool = false
     @State var selecetedWinScore: Int? = 0
     @State var selecetedMode: Int? = 0
-    @State var player: Player = Player(
-        name: "Mubiridziri",
-        rank: "Разработчик",
-        verification: true
-    ) //MockData (TOOD service.loadCurrentPlayer())
+    @State var player: Player
     
     var body: some View {
         VStack {
@@ -60,6 +56,10 @@ struct HomeScreen: View {
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen()
+        HomeScreen(player: Player(
+            name: "Mubiridziri",
+            rank: "Разработчик",
+            verification: true
+        ))
     }
 }
