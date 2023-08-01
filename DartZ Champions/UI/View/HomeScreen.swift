@@ -11,6 +11,7 @@ struct HomeScreen: View {
     @State var showingGameModeList: Bool = false
     @State var authorOpened: Bool = false
     @State var selecetedWinScore: Int? = 0
+    @State var selecetedMode: Int? = 0
     @State var player: Player = Player(
         name: "Mubiridziri",
         rank: "Разработчик",
@@ -28,7 +29,10 @@ struct HomeScreen: View {
                 }
                 .padding(.top, 15)
                 .sheet(isPresented: $showingGameModeList) {
-                    GameOptions(selecetedWinScore: $selecetedWinScore)
+                    GameOptions(
+                        selecetedWinScore: $selecetedWinScore,
+                        selecetedMode: $selecetedMode
+                    )
                 }
             }.padding(.horizontal)
             ScrollView {

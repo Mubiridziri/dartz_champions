@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var player: Player?
+    
     var body: some View {
-        HomeScreen()
+        if player != nil {
+            HomeScreen(player: player!)
+        } else {
+            WelcomeScreen(player: $player)
+        }
     }
 }
 
