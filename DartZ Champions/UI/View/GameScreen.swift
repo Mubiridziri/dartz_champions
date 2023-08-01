@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  GameScreen.swift
 //  DartZ Champions
 //
 //  Created by Юрий Потапов on 30.07.2023.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GameScreen: View {
     var body: some View {
-        HomeScreen()
+        Text("Hello, World!")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct GameScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GameScreen()
     }
 }
