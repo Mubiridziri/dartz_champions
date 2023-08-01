@@ -37,6 +37,10 @@
 		75D276542A7992DF00A1D41E /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D276532A7992DF00A1D41E /* WelcomeScreen.swift */; };
 		75D276562A79931A00A1D41E /* MembershipToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D276552A79931A00A1D41E /* MembershipToken.swift */; };
 		75D276582A79944600A1D41E /* WideTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D276572A79944600A1D41E /* WideTextField.swift */; };
+		75D2765B2A799F3800A1D41E /* ShotBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2765A2A799F3800A1D41E /* ShotBar.swift */; };
+		75D2765D2A79A15E00A1D41E /* GameButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2765C2A79A15E00A1D41E /* GameButtonBar.swift */; };
+		75D2765F2A79A5A300A1D41E /* ShotWideButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2765E2A79A5A300A1D41E /* ShotWideButton.swift */; };
+		75D276632A79B9F900A1D41E /* WinScoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D276622A79B9F900A1D41E /* WinScoreType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +75,10 @@
 		75D276532A7992DF00A1D41E /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		75D276552A79931A00A1D41E /* MembershipToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipToken.swift; sourceTree = "<group>"; };
 		75D276572A79944600A1D41E /* WideTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideTextField.swift; sourceTree = "<group>"; };
+		75D2765A2A799F3800A1D41E /* ShotBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotBar.swift; sourceTree = "<group>"; };
+		75D2765C2A79A15E00A1D41E /* GameButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButtonBar.swift; sourceTree = "<group>"; };
+		75D2765E2A79A5A300A1D41E /* ShotWideButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotWideButton.swift; sourceTree = "<group>"; };
+		75D276622A79B9F900A1D41E /* WinScoreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinScoreType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +167,9 @@
 				75D2764D2A796C8D00A1D41E /* VRadioButton.swift */,
 				75D2764F2A796F4900A1D41E /* GameOptions.swift */,
 				75D276572A79944600A1D41E /* WideTextField.swift */,
+				75D2765A2A799F3800A1D41E /* ShotBar.swift */,
+				75D2765E2A79A5A300A1D41E /* ShotWideButton.swift */,
+				75D2765C2A79A15E00A1D41E /* GameButtonBar.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -197,6 +208,7 @@
 			children = (
 				757B06222A76F2B000439129 /* MembershipStatus.swift */,
 				75D276552A79931A00A1D41E /* MembershipToken.swift */,
+				75D276622A79B9F900A1D41E /* WinScoreType.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -273,12 +285,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				75D276582A79944600A1D41E /* WideTextField.swift in Sources */,
+				75D2765D2A79A15E00A1D41E /* GameButtonBar.swift in Sources */,
 				757B061A2A76F0F700439129 /* GameScreen.swift in Sources */,
 				75D2763F2A7954E200A1D41E /* Profile.swift in Sources */,
+				75D276632A79B9F900A1D41E /* WinScoreType.swift in Sources */,
+				75D2765F2A79A5A300A1D41E /* ShotWideButton.swift in Sources */,
 				757B061F2A76F1D400439129 /* Header.swift in Sources */,
 				757B06162A76F0C100439129 /* DeveloperScreen.swift in Sources */,
 				75D2763D2A794F5200A1D41E /* HomeScreen.swift in Sources */,
 				757B06182A76F0EB00439129 /* LocalMultiplayerLobbyScreen.swift in Sources */,
+				75D2765B2A799F3800A1D41E /* ShotBar.swift in Sources */,
 				75D276452A795E0200A1D41E /* TaskCard.swift in Sources */,
 				757B05F52A76ECB000439129 /* ContentView.swift in Sources */,
 				757B060D2A76EF8100439129 /* Leaderboard.swift in Sources */,

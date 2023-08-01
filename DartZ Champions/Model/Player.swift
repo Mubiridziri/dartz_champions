@@ -26,5 +26,6 @@ class Player: Identifiable {
     
     func clear() {
         self.currentScore = 0
+        self.isLeft = false
     }
 }
