@@ -18,7 +18,7 @@ struct RectangleButton: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .foregroundColor(.white)
                 .padding()
-        }.modifier(customButtonModifier())
+        }.modifier(customShadowButtonModifier())
     }
 }
 

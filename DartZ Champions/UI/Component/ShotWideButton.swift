@@ -13,22 +13,21 @@ struct ShotWideButton: View {
     var action: (_ score: Int) -> Void
     var body: some View {
         Menu {
-            Button(String(format: "%dx3=%d", originScore, originScore * 3)) {
+            Button(String(format: "%d\t(x3)", originScore * 3)) {
                 action(originScore * 3)
             }
-            Button(String(format: "%dx2=%d", originScore, originScore * 2)) {
+            Button(String(format: "%d\t(x2)", originScore * 2)) {
                 action(originScore * 2)
             }
-            Button(String(format: "%dx1=%d", originScore, originScore)) {
-                action(originScore)
-            }
-          
         } label: {
             Text(text)
                 .frame(maxWidth: .infinity)
                 .foregroundColor(.white)
                 .padding()
-        }.modifier(customButtonModifier())
+        } primaryAction: {
+            action(originScore)
+        }
+        .modifier(customButtonModifier())
     }
 }
 

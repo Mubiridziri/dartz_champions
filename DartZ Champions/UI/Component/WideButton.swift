@@ -10,6 +10,7 @@ import SwiftUI
 struct WideButton: View {
     var text: String = ""
     var action: () -> Void
+    var withShadow: Bool = true
     var body: some View {
         Button {
             action()
@@ -18,12 +19,12 @@ struct WideButton: View {
                 .frame(maxWidth: .infinity)
                 .foregroundColor(.white)
                 .padding()
-        }.modifier(customButtonModifier())
-       
+        }.modifier(customShadowButtonModifier())
+        
     }
 }
 
-struct customButtonModifier: ViewModifier {
+struct customShadowButtonModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .background(Color.black)
@@ -34,6 +35,14 @@ struct customButtonModifier: ViewModifier {
             .shadow(color: .black.opacity(0.05), radius: 4.5, x: 10, y: 11)
             .shadow(color: .black.opacity(0.01), radius: 5.5, x: 18, y: 20)
             .shadow(color: .black.opacity(0), radius: 6, x: 28, y: 31)
+    }
+}
+
+struct customButtonModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .background(Color.black)
+            .cornerRadius(10)
     }
 }
 
