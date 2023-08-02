@@ -16,22 +16,26 @@ struct GameScreen: View {
     var body: some View {
         VStack {
             HStack {
-                Text("")
-                Spacer()
                 Header(text: player.name)
                 Spacer()
+                Button() {
+                    shots.removeLast()
+                } label: {
+                    Image(systemName: "arrow.uturn.left")
+                        .imageScale(.large)
+                        .foregroundColor(.black)
+                }.padding(.horizontal)
                 Menu() {
                     Button("Сбросить попытку", action: handleShotClear)
                     Button("Закончить игру", action: handleExitGame)
                 } label: {
-                    HStack {
-                        Image(systemName: "flag.checkered")
-                            .imageScale(.large)
-                            .foregroundColor(Color.black)
-                    }.padding(.top, 10)
-                }.foregroundColor(Color.blue)
+                    Image(systemName: "flag.checkered")
+                        .imageScale(.large)
+                        .foregroundColor(Color.black)
+                }.padding(.horizontal)
                 
-            }
+                
+            }.padding(.bottom)
             Subheader(text: String(format: "Текущий счет: %d", player.currentScore) + getRealCurrentScore())
             Subheader(text: String(format: "Осталось: %d", winScore - player.currentScore))
             ShotBar(shots: $shots).padding(30)
