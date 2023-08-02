@@ -13,7 +13,6 @@
 		757B05FA2A76ECB100439129 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757B05F92A76ECB100439129 /* Preview Assets.xcassets */; };
 		757B06072A76ED0E00439129 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757B06062A76ED0E00439129 /* Player.swift */; };
 		757B06092A76ED1800439129 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757B06082A76ED1800439129 /* Game.swift */; };
-		757B060B2A76ED3300439129 /* Sector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757B060A2A76ED3300439129 /* Sector.swift */; };
 		757B060D2A76EF8100439129 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757B060C2A76EF8100439129 /* Leaderboard.swift */; };
 		757B060F2A76EF8B00439129 /* LeaderboardMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757B060E2A76EF8B00439129 /* LeaderboardMember.swift */; };
 		757B06142A76F0A100439129 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757B06132A76F0A100439129 /* Launch Screen.storyboard */; };
@@ -51,7 +50,6 @@
 		757B05F92A76ECB100439129 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		757B06062A76ED0E00439129 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		757B06082A76ED1800439129 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		757B060A2A76ED3300439129 /* Sector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sector.swift; sourceTree = "<group>"; };
 		757B060C2A76EF8100439129 /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
 		757B060E2A76EF8B00439129 /* LeaderboardMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardMember.swift; sourceTree = "<group>"; };
 		757B06132A76F0A100439129 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -179,7 +177,6 @@
 			children = (
 				757B06062A76ED0E00439129 /* Player.swift */,
 				757B06082A76ED1800439129 /* Game.swift */,
-				757B060A2A76ED3300439129 /* Sector.swift */,
 				757B060C2A76EF8100439129 /* Leaderboard.swift */,
 				757B060E2A76EF8B00439129 /* LeaderboardMember.swift */,
 				75D276512A79875900A1D41E /* PlayerStatistic.swift */,
@@ -303,7 +300,6 @@
 				75D276562A79931A00A1D41E /* MembershipToken.swift in Sources */,
 				75D2764E2A796C8D00A1D41E /* VRadioButton.swift in Sources */,
 				75D276542A7992DF00A1D41E /* WelcomeScreen.swift in Sources */,
-				757B060B2A76ED3300439129 /* Sector.swift in Sources */,
 				757B060F2A76EF8B00439129 /* LeaderboardMember.swift in Sources */,
 				757B06072A76ED0E00439129 /* Player.swift in Sources */,
 				75D276432A795DB900A1D41E /* ReportCard.swift in Sources */,

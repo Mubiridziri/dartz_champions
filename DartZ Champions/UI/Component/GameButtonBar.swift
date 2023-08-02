@@ -25,7 +25,7 @@ struct GameButtonBar: View {
             ButtonRow(buttons: [19, 20], click: click)
             HStack {
                 WideButton(text: String(25)) {
-                    click(50)
+                    click(25)
                 }
                 WideButton(text: String(50)) {
                     click(50)
